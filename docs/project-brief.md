@@ -26,14 +26,16 @@ To czynności w ogólnej wizji produktu. Ich zakres w pierwszej wersji określa 
 
 | Obszar | Zakres |
 | --- | --- |
-| Oferty prowadzącego | Dodanie i publikacja oferty z opisem, charakterem usługi, ceną, czasem trwania oraz formą online lub miejscem spotkania. Cena jest informacją; aplikacja nie pobiera płatności. |
-| Grafik na konkretne tygodnie | Ustawianie przedziałów dostępności dla poszczególnych dni oraz kopiowanie grafiku na wybrane tygodnie. Przykładowo można przygotować najbliższych pięć tygodni; liczba pięć nie jest ustalonym limitem. |
-| Katalog ofert | Przeglądanie szczegółów, podstawowe filtry, np. rodzaj usługi i forma spotkania, oraz podział wyników na strony. |
-| Rezerwacja | Wybór oferty i terminu; automatyczne potwierdzenie, jeżeli cały czas spotkania nadal jest dostępny. |
-| Wspólna kontrola zajętości | Spotkania tej samej osoby nie mogą się nakładać pomiędzy jej różnymi ofertami, niezależnie od ich kategorii i późniejszego wyboru liczby profili. |
+| Profile zawodowe | Osoba ma jeden lub kilka profili zawodowych. Profil obejmuje jedną lub kilka pokrewnych profesji o tym samym charakterze usługi, ma własne oferty i grafik. Katalog pokazuje prowadzącego, nie poszczególne profile. |
+| Oferty prowadzącego | Dodanie oferty jako szkicu i jej publikacja. Oferta należy do profilu i ma opis, rodzaj usługi z zamkniętej listy (wyznacza charakter usługi), profesję prowadzącego, cenę, czas trwania, przerwę po spotkaniu oraz możliwe formy: online, stacjonarnie lub obie. Miejsce spotkania wynika z grafiku, nie z oferty. Szkic nie jest widoczny w katalogu. Cena jest informacją; aplikacja nie pobiera płatności. |
+| Grafik na konkretne tygodnie | Ustawianie przedziałów dostępności profilu dla poszczególnych dni, z miejscem i formami spotkań (np. tylko online albo gabinet stacjonarnie i online), oraz kopiowanie grafiku na wybrane tygodnie. Przedziały wszystkich grafików osoby nie mogą się nakładać. Przykładowo można przygotować najbliższych pięć tygodni; liczba pięć nie jest ustalonym limitem. |
+| Katalog ofert | Przeglądanie szczegółów, podstawowe filtry, np. rodzaj usługi i forma spotkania, oraz podział wyników na strony. Przeglądanie i wyszukiwanie nie wymagają konta: anonimowy odwiedzający widzi oferty, profile prowadzących i wolne terminy. |
+| Rezerwacja | Wybór oferty, terminu i formy spotkania; automatyczne potwierdzenie, jeżeli cały czas spotkania nadal jest dostępny. |
+| Wspólna kontrola zajętości | Spotkania tej samej osoby nie mogą się nakładać pomiędzy jej różnymi ofertami, niezależnie od ich kategorii i profilu. Zajętość obejmuje czas spotkania i przerwę po nim, a także rezerwacje, w których osoba jest uczestnikiem (sam czas spotkania). |
 | Moje spotkania i anulowanie | Uczestnik i prowadzący widzą związane z nimi rezerwacje oraz mogą je anulować. Anulowanie zwalnia termin, a historia rezerwacji pozostaje. |
-| Konta i dostęp | Logowanie, wylogowanie, wygasanie sesji i uprawnienia do własnych ofert lub rezerwacji. Początkowo można korzystać z przygotowanych kont testowych. |
+| Konta i dostęp | Rejestracja przez e-mail i hasło, logowanie, wylogowanie, wygasanie sesji i uprawnienia do własnych ofert lub rezerwacji. Rezerwacja i inne akcje wymagają zalogowania. Każda zarejestrowana osoba może rezerwować, a założenie profilu zawodowego czyni ją prowadzącym. Konta testowe tworzy seeder. |
 | Odporność na ponowienie | Podwójne kliknięcie lub ponowne wysłanie tego samego żądania po problemie z połączeniem nie tworzy drugiej rezerwacji. |
+| Powiadomienia w aplikacji | Uczestnik i prowadzący widzą w aplikacji informacje o zmianach w swoich rezerwacjach, np. o anulowaniu przez drugą stronę. Powiadomienia e-mail i push pozostają rozszerzeniem. |
 
 ### Uproszczenia przyjęte na początek
 
@@ -42,10 +44,12 @@ To czynności w ogólnej wizji produktu. Ich zakres w pierwszej wersji określa 
 - Grafik dotyczy konkretnych dat. Kopiowanie na wybrane tygodnie nie oznacza stałej reguły „każdy poniedziałek w przyszłości”. Reguły cykliczne z wyjątkami pozostają rozszerzeniem.
 - Dostępność musi pomieścić cały czas spotkania. Medytacja 10:00–12:00 koliduje z zajęciami oddechowymi 11:30–12:00, mimo różnych godzin rozpoczęcia.
 - Kopiowanie lub zmiana grafiku musi respektować istniejące rezerwacje. Szczegółowe zasady tych zmian doprecyzujemy podczas modelowania domeny.
+- Przejazd między miejscami planuje prowadzący, układając grafik; aplikacja go nie pilnuje.
+- Oferty nie można ograniczyć do wybranego miejsca — jest dostępna w każdym przedziale grafiku z pasującą formą.
 
 ### Poza pierwszą wersją
 
-Kursy i zajęcia grupowe, wyjazdy i udostępnianie obiektów, płatności i abonamenty, przełożenie spotkania, stałe reguły cykliczne i rozbudowane wyjątki, zewnętrzny kalendarz, wyszukiwanie w promieniu, komunikator, rozbudowane powiadomienia oraz działanie offline.
+Kursy i zajęcia grupowe, wyjazdy i udostępnianie obiektów, płatności i abonamenty, przełożenie spotkania, stałe reguły cykliczne i rozbudowane wyjątki, zewnętrzny kalendarz, wyszukiwanie w promieniu, komunikator, powiadomienia e-mail i push, weryfikacja e-maila i reset hasła, weryfikacja tożsamości i kwalifikacji prowadzących oraz działanie offline.
 
 ## 4. Źródło danych i symulacja
 
@@ -94,4 +98,4 @@ Szersza wizja obejmuje kursy, wyjazdy, gospodarzy obiektów i organizatorów, a 
 | Mylący charakter oferty | Pomoc psychologiczna i psychiatryczna jest wyraźnie odróżniona od praktyk dobrostanu, również u tej samej osoby. |
 | Zbyt proste dane testowe | Seeder obejmuje przypadki problematyczne, a poprawność procesu sprawdzamy również operacjami. |
 
-**Liczba profili zawodowych w jednym koncie pozostaje do rozstrzygnięcia podczas modelowania domeny. Niezależnie od wybranego wariantu wszystkie oferty tej samej osoby podlegają wspólnej kontroli zajętości.**
+**Liczba profili zawodowych została rozstrzygnięta podczas modelowania domeny (`docs/decisions.md`, R-010): osoba może mieć kilka profili. Wszystkie oferty tej samej osoby nadal podlegają wspólnej kontroli zajętości.**
