@@ -35,7 +35,6 @@ To czynności w ogólnej wizji produktu. Ich zakres w pierwszej wersji określa 
 | Moje spotkania i anulowanie | Uczestnik i prowadzący widzą związane z nimi rezerwacje oraz mogą je anulować. Anulowanie zwalnia termin, a historia rezerwacji pozostaje. |
 | Konta i dostęp | Rejestracja przez e-mail i hasło, logowanie, wylogowanie, wygasanie sesji i uprawnienia do własnych ofert lub rezerwacji. Rezerwacja i inne akcje wymagają zalogowania. Każda zarejestrowana osoba może rezerwować, a założenie profilu zawodowego czyni ją prowadzącym. Konta testowe tworzy seeder. |
 | Odporność na ponowienie | Podwójne kliknięcie lub ponowne wysłanie tego samego żądania po problemie z połączeniem nie tworzy drugiej rezerwacji. |
-| Powiadomienia w aplikacji | Uczestnik i prowadzący widzą w aplikacji informacje o zmianach w swoich rezerwacjach, np. o anulowaniu przez drugą stronę. Powiadomienia e-mail i push pozostają rozszerzeniem. |
 
 ### Uproszczenia przyjęte na początek
 
@@ -49,7 +48,7 @@ To czynności w ogólnej wizji produktu. Ich zakres w pierwszej wersji określa 
 
 ### Poza pierwszą wersją
 
-Kursy i zajęcia grupowe, wyjazdy i udostępnianie obiektów, płatności i abonamenty, przełożenie spotkania, stałe reguły cykliczne i rozbudowane wyjątki, zewnętrzny kalendarz, wyszukiwanie w promieniu, komunikator, powiadomienia e-mail i push, weryfikacja e-maila i reset hasła, weryfikacja tożsamości i kwalifikacji prowadzących oraz działanie offline.
+Kursy i zajęcia grupowe, wyjazdy i udostępnianie obiektów, płatności i abonamenty, przełożenie spotkania, stałe reguły cykliczne i rozbudowane wyjątki, zewnętrzny kalendarz, wyszukiwanie w promieniu, komunikator, powiadomienia (w aplikacji, e-mail i push), przekazywanie linku do spotkania online, weryfikacja e-maila i reset hasła, weryfikacja tożsamości i kwalifikacji prowadzących oraz działanie offline.
 
 ## 4. Źródło danych i symulacja
 

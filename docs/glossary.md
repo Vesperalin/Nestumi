@@ -136,13 +136,6 @@ Wspólny język pierwszej wersji. Definicje bez odwołań do technologii. Zakres
 - **Przykład:** Studio jogi, ul. Puławska 10, Warszawa.
 - **To nie jest:** link do spotkania online; obiekt wyjazdowy (przyszłość).
 
-### Link do spotkania
-
-- **Definicja:** Adres spotkania online w zewnętrznym narzędziu, który prowadzący dodaje do konkretnej rezerwacji.
-- **Nazwa w kodzie (EN):** MeetingLink
-- **Przykład:** Link do Google Meet dodany przez Ewę do wtorkowej konsultacji online z Kasią.
-- **To nie jest:** miejsce spotkania; cecha oferty ani profilu.
-
 ## Reguły i czynności
 
 ### Kolizja
@@ -179,13 +172,6 @@ Wspólny język pierwszej wersji. Definicje bez odwołań do technologii. Zakres
 - **Nazwa w kodzie (EN):** Cancel
 - **Przykład:** Ola anuluje rezerwację na wtorek 10:00 — Anna znów ma ten czas wolny.
 - **To nie jest:** usunięcie przedziału dostępności; usunięcie rezerwacji z historii.
-
-### Powiadomienie
-
-- **Definicja:** Informacja w aplikacji dla uczestnika lub prowadzącego o zdarzeniu dotyczącym jego rezerwacji, widoczna po zalogowaniu.
-- **Nazwa w kodzie (EN):** Notification
-- **Przykład:** Anna anuluje spotkanie z Olą. Ola po zalogowaniu widzi: „Anna anulowała spotkanie we wtorek 3 listopada o 10:00”.
-- **To nie jest:** e-mail ani push na urządzenie (rozszerzenia); wiadomość od drugiej strony (komunikator poza v1); sama zmiana rezerwacji — powiadomienie tylko o niej informuje.
 
 ### Kopiowanie grafiku
 
@@ -230,6 +216,5 @@ Szablon nowego wpisu:
 | konflikt | kolizja; spór między stronami | Kolizja |
 | akceptacja / zatwierdzenie | automatyczne potwierdzenie; ręczna akceptacja prowadzącego (poza v1); złożenie rezerwacji | Potwierdzenie, Złożenie rezerwacji |
 | odwołanie / usunięcie | anulowanie (rezerwacja zostaje w historii); trwałe usunięcie | Anulowanie |
-| wiadomość / alert | powiadomienie; wiadomość z komunikatora (poza v1) | Powiadomienie |
 | powtarzanie / cykl | jednorazowe kopiowanie grafiku; stała reguła cykliczna (poza v1) | Kopiowanie grafiku |
 | gabinet | miejsce spotkania; tylko jeden z rodzajów miejsca | Miejsce spotkania |
