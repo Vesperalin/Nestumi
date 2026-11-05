@@ -180,41 +180,30 @@ Wspólny język pierwszej wersji. Definicje bez odwołań do technologii. Zakres
 - **Przykład:** Anna kopiuje grafik z tygodnia 2–8 listopada na pięć kolejnych tygodni.
 - **To nie jest:** stała reguła cykliczna; nie tworzy rezerwacji.
 
-<!--
-Szablon nowego wpisu:
-
-### <Pojęcie>
-
-- **Definicja:** 
-- **Nazwa w kodzie (EN):** 
-- **Przykład:** 
-- **To nie jest:** 
--->
-
 ## Słowa niejednoznaczne — nie używam ich bez doprecyzowania
 
-| Słowo | Możliwe znaczenia | Czego używam zamiast |
-| --- | --- | --- |
-| termin | wolny termin; zarezerwowane spotkanie; po prostu data | Wolny termin, Rezerwacja, data |
-| spotkanie | rezerwacja; samo wydarzenie; w przyszłości zajęcia grupowe z wieloma rezerwacjami | Rezerwacja (v1); „spotkanie” w zwykłym znaczeniu, np. „czas spotkania” |
-| dostępność | to, co osoba zadeklarowała w grafiku; to, co zostało wolne po odjęciu rezerwacji | Przedział dostępności, Wolny termin |
-| czas spotkania / czas zajętości | czas trwania widoczny dla uczestnika; czas trwania + przerwa po spotkaniu | Czas trwania; „czas zajętości” tylko w znaczeniu z przerwą |
-| rola | prowadzący / uczestnik; profesja, w ramach której prowadzi ofertę („występuje jako psycholog”) | Prowadzący, Uczestnik, Profesja |
-| kategoria / obszar | charakter usługi; rodzaj usługi | Charakter usługi, Rodzaj usługi |
-| zapis | rezerwacja spotkania indywidualnego; przyszły zapis na zajęcia grupowe | Rezerwacja (v1) |
-| sesja | spotkanie (np. sesja terapeutyczna); sesja logowania | Rezerwacja; „sesja” tylko w znaczeniu logowania |
-| użytkownik | osoba; konto; odwiedzający bez zalogowania | Osoba, Anonimowy odwiedzający |
-| gość | anonimowy odwiedzający; w przyszłych wyjazdach osoba nocująca w obiekcie | Anonimowy odwiedzający |
-| potwierdzenie | czynność uczestnika po obejrzeniu podsumowania; automatyczne przyjęcie rezerwacji przez Nestumi | Złożenie rezerwacji, Potwierdzenie |
-| specjalista / terapeuta / instruktor | prowadzący; profesja | Prowadzący, Profesja |
-| uprawnienia | kwalifikacje zawodowe; dostęp w aplikacji | kwalifikacje (część profilu zawodowego); „uprawnienia” tylko w znaczeniu dostępu |
-| slot | wolny termin; przedział dostępności; krok rozpoczęć | Wolny termin, Przedział dostępności, Krok rozpoczęć |
-| wizyta | rezerwacja; skojarzenie medyczne, nieprawdziwe dla dobrostanu | Rezerwacja |
-| klient / pacjent | uczestnik; „pacjent” sugeruje kontekst medyczny | Uczestnik |
-| appointment / reservation (EN) | rezerwacja albo spotkanie | Booking |
-| host (EN) | prowadzący; przyszły gospodarz obiektu | Provider |
-| konflikt | kolizja; spór między stronami | Kolizja |
-| akceptacja / zatwierdzenie | automatyczne potwierdzenie; ręczna akceptacja prowadzącego (poza v1); złożenie rezerwacji | Potwierdzenie, Złożenie rezerwacji |
-| odwołanie / usunięcie | anulowanie (rezerwacja zostaje w historii); trwałe usunięcie | Anulowanie |
-| powtarzanie / cykl | jednorazowe kopiowanie grafiku; stała reguła cykliczna (poza v1) | Kopiowanie grafiku |
-| gabinet | miejsce spotkania; tylko jeden z rodzajów miejsca | Miejsce spotkania |
+| Słowo                                | Możliwe znaczenia                                                                               | Czego używam zamiast                                                             |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| termin                               | wolny termin; zarezerwowane spotkanie; po prostu data                                           | Wolny termin, Rezerwacja, data                                                   |
+| spotkanie                            | rezerwacja; samo wydarzenie; w przyszłości zajęcia grupowe z wieloma rezerwacjami               | Rezerwacja (v1); „spotkanie” w zwykłym znaczeniu, np. „czas spotkania”           |
+| dostępność                           | to, co osoba zadeklarowała w grafiku; to, co zostało wolne po odjęciu rezerwacji                | Przedział dostępności, Wolny termin                                              |
+| czas spotkania / czas zajętości      | czas trwania widoczny dla uczestnika; czas trwania + przerwa po spotkaniu                       | Czas trwania; „czas zajętości” tylko w znaczeniu z przerwą                       |
+| rola                                 | prowadzący / uczestnik; profesja, w ramach której prowadzi ofertę („występuje jako psycholog”)  | Prowadzący, Uczestnik, Profesja                                                  |
+| kategoria / obszar                   | charakter usługi; rodzaj usługi                                                                 | Charakter usługi, Rodzaj usługi                                                  |
+| zapis                                | rezerwacja spotkania indywidualnego; przyszły zapis na zajęcia grupowe                          | Rezerwacja (v1)                                                                  |
+| sesja                                | spotkanie (np. sesja terapeutyczna); sesja logowania                                            | Rezerwacja; „sesja” tylko w znaczeniu logowania                                  |
+| użytkownik                           | osoba; konto; odwiedzający bez zalogowania                                                      | Osoba, Anonimowy odwiedzający                                                    |
+| gość                                 | anonimowy odwiedzający; w przyszłych wyjazdach osoba nocująca w obiekcie                        | Anonimowy odwiedzający                                                           |
+| potwierdzenie                        | czynność uczestnika po obejrzeniu podsumowania; automatyczne przyjęcie rezerwacji przez Nestumi | Złożenie rezerwacji, Potwierdzenie                                               |
+| specjalista / terapeuta / instruktor | prowadzący; profesja                                                                            | Prowadzący, Profesja                                                             |
+| uprawnienia                          | kwalifikacje zawodowe; dostęp w aplikacji                                                       | kwalifikacje (część profilu zawodowego); „uprawnienia” tylko w znaczeniu dostępu |
+| slot                                 | wolny termin; przedział dostępności; krok rozpoczęć                                             | Wolny termin, Przedział dostępności, Krok rozpoczęć                              |
+| wizyta                               | rezerwacja; skojarzenie medyczne, nieprawdziwe dla dobrostanu                                   | Rezerwacja                                                                       |
+| klient / pacjent                     | uczestnik; „pacjent” sugeruje kontekst medyczny                                                 | Uczestnik                                                                        |
+| appointment / reservation (EN)       | rezerwacja albo spotkanie                                                                       | Booking                                                                          |
+| host (EN)                            | prowadzący; przyszły gospodarz obiektu                                                          | Provider                                                                         |
+| konflikt                             | kolizja; spór między stronami                                                                   | Kolizja                                                                          |
+| akceptacja / zatwierdzenie           | automatyczne potwierdzenie; ręczna akceptacja prowadzącego (poza v1); złożenie rezerwacji       | Potwierdzenie, Złożenie rezerwacji                                               |
+| odwołanie / usunięcie                | anulowanie (rezerwacja zostaje w historii); trwałe usunięcie                                    | Anulowanie                                                                       |
+| powtarzanie / cykl                   | jednorazowe kopiowanie grafiku; stała reguła cykliczna (poza v1)                                | Kopiowanie grafiku                                                               |
+| gabinet                              | miejsce spotkania; tylko jeden z rodzajów miejsca                                               | Miejsce spotkania                                                                |

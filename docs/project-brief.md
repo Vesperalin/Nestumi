@@ -12,11 +12,11 @@ Projekt jest autorski i służy nauce fullstacka. Jego realizacja nie wymaga kli
 
 ## 2. Trzy główne czynności użytkownika
 
-| Osoba szukająca oferty | Osoba publikująca ofertę |
-| --- | --- |
-| **1. Znaleźć i porównać oferty** według potrzeb, np. rodzaju usługi, kwalifikacji, miejsca i terminu. | **1. Przygotować i opublikować ofertę**, określając charakter usługi, prowadzącego i warunki skorzystania. |
-| **2. Zarezerwować spotkanie lub zgłosić udział** i sprawdzić, czy zapis jest potwierdzony. W pierwszej wersji dotyczy to spotkań indywidualnych. | **2. Ustalić dostępność i harmonogram**; w przyszłych ofertach grupowych również liczbę miejsc. |
-| **3. Zarządzać swoim zapisem:** sprawdzać szczegóły i zmiany, skontaktować się organizacyjnie albo zrezygnować. | **3. Obsługiwać rezerwacje i zapisy:** zarządzać zgłoszeniami, zmianami i informowaniem uczestników. |
+| Osoba szukająca oferty                                                                                                                           | Osoba publikująca ofertę                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| **1. Znaleźć i porównać oferty** według potrzeb, np. rodzaju usługi, kwalifikacji, miejsca i terminu.                                            | **1. Przygotować i opublikować ofertę**, określając charakter usługi, prowadzącego i warunki skorzystania. |
+| **2. Zarezerwować spotkanie lub zgłosić udział** i sprawdzić, czy zapis jest potwierdzony. W pierwszej wersji dotyczy to spotkań indywidualnych. | **2. Ustalić dostępność i harmonogram**; w przyszłych ofertach grupowych również liczbę miejsc.            |
+| **3. Zarządzać swoim zapisem:** sprawdzać szczegóły i zmiany, skontaktować się organizacyjnie albo zrezygnować.                                  | **3. Obsługiwać rezerwacje i zapisy:** zarządzać zgłoszeniami, zmianami i informowaniem uczestników.       |
 
 To czynności w ogólnej wizji produktu. Ich zakres w pierwszej wersji określa następna sekcja; nie obejmuje ona jeszcze komunikatora ani procesu przekładania spotkań.
 
@@ -24,17 +24,17 @@ To czynności w ogólnej wizji produktu. Ich zakres w pierwszej wersji określa 
 
 **Główny proces:** prowadzący publikuje ofertę i dostępność, uczestnik znajduje ofertę i rezerwuje termin, a obie strony mogą sprawdzić spotkanie oraz je anulować.
 
-| Obszar | Zakres |
-| --- | --- |
-| Profile zawodowe | Osoba ma jeden lub kilka profili zawodowych. Profil obejmuje jedną lub kilka pokrewnych profesji o tym samym charakterze usługi, ma własne oferty i grafik. Katalog pokazuje prowadzącego, nie poszczególne profile. |
-| Oferty prowadzącego | Dodanie oferty jako szkicu i jej publikacja. Oferta należy do profilu i ma opis, rodzaj usługi z zamkniętej listy (wyznacza charakter usługi), profesję prowadzącego, cenę, czas trwania, przerwę po spotkaniu oraz możliwe formy: online, stacjonarnie lub obie. Miejsce spotkania wynika z grafiku, nie z oferty. Szkic nie jest widoczny w katalogu. Cena jest informacją; aplikacja nie pobiera płatności. |
-| Grafik na konkretne tygodnie | Ustawianie przedziałów dostępności profilu dla poszczególnych dni, z miejscem i formami spotkań (np. tylko online albo gabinet stacjonarnie i online), oraz kopiowanie grafiku na wybrane tygodnie. Przedziały wszystkich grafików osoby nie mogą się nakładać. Przykładowo można przygotować najbliższych pięć tygodni; liczba pięć nie jest ustalonym limitem. |
-| Katalog ofert | Przeglądanie szczegółów, podstawowe filtry, np. rodzaj usługi i forma spotkania, oraz podział wyników na strony. Przeglądanie i wyszukiwanie nie wymagają konta: anonimowy odwiedzający widzi oferty, profile prowadzących i wolne terminy. |
-| Rezerwacja | Wybór oferty, terminu i formy spotkania; automatyczne potwierdzenie, jeżeli cały czas spotkania nadal jest dostępny. |
-| Wspólna kontrola zajętości | Spotkania tej samej osoby nie mogą się nakładać pomiędzy jej różnymi ofertami, niezależnie od ich kategorii i profilu. Zajętość obejmuje czas spotkania i przerwę po nim, a także rezerwacje, w których osoba jest uczestnikiem (sam czas spotkania). |
-| Moje spotkania i anulowanie | Uczestnik i prowadzący widzą związane z nimi rezerwacje oraz mogą je anulować. Anulowanie zwalnia termin, a historia rezerwacji pozostaje. |
-| Konta i dostęp | Rejestracja przez e-mail i hasło, logowanie, wylogowanie, wygasanie sesji i uprawnienia do własnych ofert lub rezerwacji. Rezerwacja i inne akcje wymagają zalogowania. Każda zarejestrowana osoba może rezerwować, a założenie profilu zawodowego czyni ją prowadzącym. Konta testowe tworzy seeder. |
-| Odporność na ponowienie | Podwójne kliknięcie lub ponowne wysłanie tego samego żądania po problemie z połączeniem nie tworzy drugiej rezerwacji. |
+| Obszar                       | Zakres                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Profile zawodowe             | Osoba ma jeden lub kilka profili zawodowych. Profil obejmuje jedną lub kilka pokrewnych profesji o tym samym charakterze usługi, ma własne oferty i grafik. Katalog pokazuje prowadzącego, nie poszczególne profile.                                                                                                                                                                                           |
+| Oferty prowadzącego          | Dodanie oferty jako szkicu i jej publikacja. Oferta należy do profilu i ma opis, rodzaj usługi z zamkniętej listy (wyznacza charakter usługi), profesję prowadzącego, cenę, czas trwania, przerwę po spotkaniu oraz możliwe formy: online, stacjonarnie lub obie. Miejsce spotkania wynika z grafiku, nie z oferty. Szkic nie jest widoczny w katalogu. Cena jest informacją; aplikacja nie pobiera płatności. |
+| Grafik na konkretne tygodnie | Ustawianie przedziałów dostępności profilu dla poszczególnych dni, z miejscem i formami spotkań (np. tylko online albo gabinet stacjonarnie i online), oraz kopiowanie grafiku na wybrane tygodnie. Przedziały wszystkich grafików osoby nie mogą się nakładać. Przykładowo można przygotować najbliższych pięć tygodni; liczba pięć nie jest ustalonym limitem.                                               |
+| Katalog ofert                | Przeglądanie szczegółów, podstawowe filtry, np. rodzaj usługi i forma spotkania, oraz podział wyników na strony. Przeglądanie i wyszukiwanie nie wymagają konta: anonimowy odwiedzający widzi oferty, profile prowadzących i wolne terminy.                                                                                                                                                                    |
+| Rezerwacja                   | Wybór oferty, terminu i formy spotkania; automatyczne potwierdzenie, jeżeli cały czas spotkania nadal jest dostępny.                                                                                                                                                                                                                                                                                           |
+| Wspólna kontrola zajętości   | Spotkania tej samej osoby nie mogą się nakładać pomiędzy jej różnymi ofertami, niezależnie od ich kategorii i profilu. Zajętość obejmuje czas spotkania i przerwę po nim, a także rezerwacje, w których osoba jest uczestnikiem (sam czas spotkania).                                                                                                                                                          |
+| Moje spotkania i anulowanie  | Uczestnik i prowadzący widzą związane z nimi rezerwacje oraz mogą je anulować. Anulowanie zwalnia termin, a historia rezerwacji pozostaje.                                                                                                                                                                                                                                                                     |
+| Konta i dostęp               | Rejestracja przez e-mail i hasło, logowanie, wylogowanie, wygasanie sesji i uprawnienia do własnych ofert lub rezerwacji. Rezerwacja i inne akcje wymagają zalogowania. Każda zarejestrowana osoba może rezerwować, a założenie profilu zawodowego czyni ją prowadzącym. Konta testowe tworzy seeder.                                                                                                          |
+| Odporność na ponowienie      | Podwójne kliknięcie lub ponowne wysłanie tego samego żądania po problemie z połączeniem nie tworzy drugiej rezerwacji.                                                                                                                                                                                                                                                                                         |
 
 ### Uproszczenia przyjęte na początek
 
@@ -60,41 +60,41 @@ Konflikty sprawdzamy także przez wykonywanie operacji: równoczesne próby reze
 
 ## 5. Wartość edukacyjna pierwszej wersji
 
-| Etap | Materiał do nauki w Nestumi |
-| --- | --- |
-| **Modelowanie domeny i wymagań** | Znaczenie osoby, kwalifikacji, oferty, dostępności i rezerwacji; reguły kolizji, stany i anulowanie. |
-| **Relacyjna baza i SQL** | Relacje i ograniczenia, daty i przedziały, historia, zapytania katalogu i list spotkań, filtrowanie i agregacje. |
-| **Stos, szkielet i środowisko Claude Code** | Przygotowanie repozytorium i środowiska, wybór narzędzi, podstawowe CI i świadoma współpraca z AI. Nie wymaga dodatkowej funkcji produktu. |
-| **Kompletna funkcjonalność fullstackowa** | Rezerwacja od UI do bazy, kontrakt API, walidacja, logowanie, sesje, uprawnienia, błędy, testy i logi. |
-| **Spójność, współbieżność i wydajność danych** | Równoczesne rezerwacje i ponowienia, transakcje, analiza zapytań, paginacja i indeksy; osobne ćwiczenia migracji, backupu i odtworzenia. |
-| **DDD, VSA i wzorce** | Organizacja kodu rezerwacji i anulowania, wspólna reguła zajętości, porównanie sposobów organizacji kodu przy zmianie wymagania. |
-| **Wdrożenia** | Uruchamianie i wydawanie aplikacji, CI/CD, konfiguracja, diagnozowanie awarii i kontrolowane zmiany. |
-| **Pomiary i optymalizacja** | Większy wygenerowany katalog i obciążenie; pomiary wyszukiwania oraz rezerwacji przed optymalizacją i po niej. |
+| Etap                                           | Materiał do nauki w Nestumi                                                                                                                |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Modelowanie domeny i wymagań**               | Znaczenie osoby, kwalifikacji, oferty, dostępności i rezerwacji; reguły kolizji, stany i anulowanie.                                       |
+| **Relacyjna baza i SQL**                       | Relacje i ograniczenia, daty i przedziały, historia, zapytania katalogu i list spotkań, filtrowanie i agregacje.                           |
+| **Stos, szkielet i środowisko Claude Code**    | Przygotowanie repozytorium i środowiska, wybór narzędzi, podstawowe CI i świadoma współpraca z AI. Nie wymaga dodatkowej funkcji produktu. |
+| **Kompletna funkcjonalność fullstackowa**      | Rezerwacja od UI do bazy, kontrakt API, walidacja, logowanie, sesje, uprawnienia, błędy, testy i logi.                                     |
+| **Spójność, współbieżność i wydajność danych** | Równoczesne rezerwacje i ponowienia, transakcje, analiza zapytań, paginacja i indeksy; osobne ćwiczenia migracji, backupu i odtworzenia.   |
+| **DDD, VSA i wzorce**                          | Organizacja kodu rezerwacji i anulowania, wspólna reguła zajętości, porównanie sposobów organizacji kodu przy zmianie wymagania.           |
+| **Wdrożenia**                                  | Uruchamianie i wydawanie aplikacji, CI/CD, konfiguracja, diagnozowanie awarii i kontrolowane zmiany.                                       |
+| **Pomiary i optymalizacja**                    | Większy wygenerowany katalog i obciążenie; pomiary wyszukiwania oraz rezerwacji przed optymalizacją i po niej.                             |
 
 ## 6. Naturalne rozszerzenia i dalsza nauka
 
 Poniższe możliwości nie powiększają zatwierdzonego zakresu pierwszej wersji.
 
-| Rozszerzenie | Funkcjonalność i powiązanie z roadmapą |
-| --- | --- |
-| Lokalizacja | Wyszukiwanie ofert stacjonarnych w promieniu od wybranego punktu, połączone z innymi filtrami. Odległość geograficzna nie oznacza czasu dojazdu. |
+| Rozszerzenie                          | Funkcjonalność i powiązanie z roadmapą                                                                                                                                                                         |
+| ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Lokalizacja                           | Wyszukiwanie ofert stacjonarnych w promieniu od wybranego punktu, połączone z innymi filtrami. Odległość geograficzna nie oznacza czasu dojazdu.                                                               |
 | Zmiana terminu i kalendarz zewnętrzny | Utworzenie, zmiana i anulowanie wydarzenia oraz widoczny stan synchronizacji. Pierwsza integracja: jeden dostawca, kierunek Nestumi → kalendarz. Dostawca i strona podłączająca kalendarz pozostają do wyboru. |
-| Zadania w tle i powiadomienia | Potwierdzenia, przypomnienia i synchronizacja kalendarza z obsługą błędów, ponowień i różnych skutków jednej zmiany.|
-| Przyspieszanie odczytów | Cache i wcześniejsze przygotowywanie wybranych danych po pomiarach, również na sztucznym obciążeniu. Rozszerzenie edukacyjne wymagające uzasadnienia. |
-| Wyszukiwanie tekstowe | Przeszukiwanie opisów i łączenie wyników z filtrami; porównanie metod oraz odtwarzanie indeksu. Funkcja jest naturalna, osobny silnik wymaga świadomej decyzji. |
-| Aktualizacje na żywo | Aktualna dostępność i zmiany spotkań bez ręcznego odświeżania. Mała rozmowa organizacyjna może osobno posłużyć do ćwiczenia komunikacji dwukierunkowej. |
-| PWA i Web Push | Podgląd wcześniej pobranego harmonogramu offline, oznaczenie nieaktualności i powiadomienia o zmianach. |
+| Zadania w tle i powiadomienia         | Potwierdzenia, przypomnienia i synchronizacja kalendarza z obsługą błędów, ponowień i różnych skutków jednej zmiany.                                                                                           |
+| Przyspieszanie odczytów               | Cache i wcześniejsze przygotowywanie wybranych danych po pomiarach, również na sztucznym obciążeniu. Rozszerzenie edukacyjne wymagające uzasadnienia.                                                          |
+| Wyszukiwanie tekstowe                 | Przeszukiwanie opisów i łączenie wyników z filtrami; porównanie metod oraz odtwarzanie indeksu. Funkcja jest naturalna, osobny silnik wymaga świadomej decyzji.                                                |
+| Aktualizacje na żywo                  | Aktualna dostępność i zmiany spotkań bez ręcznego odświeżania. Mała rozmowa organizacyjna może osobno posłużyć do ćwiczenia komunikacji dwukierunkowej.                                                        |
+| PWA i Web Push                        | Podgląd wcześniej pobranego harmonogramu offline, oznaczenie nieaktualności i powiadomienia o zmianach.                                                                                                        |
 
 Szersza wizja obejmuje kursy, wyjazdy, gospodarzy obiektów i organizatorów, a potencjalnie także płatności uczestników, rozliczenia między stronami i osobny abonament prowadzących za platformę. Nie trzeba ich dodawać, żeby ćwiczyć większość roadmapy na procesie spotkań indywidualnych.
 
 ## 7. Najważniejsze ryzyka i otwarte decyzje
 
-| Ryzyko | Przyjęte podejście |
-| --- | --- |
-| Rozrastanie się zakresu | Pierwsza wersja pozostaje przy spotkaniach indywidualnych. Pozostałe możliwości są wizją rozwoju. |
-| Błędy w dostępności | Sprawdzamy różne długości, kolizje między ofertami, równoczesne operacje, ponowienia i wpływ kopiowania grafiku na istniejące rezerwacje. |
-| Dostęp do cudzych danych | Publiczne są informacje przeznaczone do publikacji. Szczegóły rezerwacji widzą wyłącznie uprawnione osoby. |
-| Mylący charakter oferty | Pomoc psychologiczna i psychiatryczna jest wyraźnie odróżniona od praktyk dobrostanu, również u tej samej osoby. |
-| Zbyt proste dane testowe | Seeder obejmuje przypadki problematyczne, a poprawność procesu sprawdzamy również operacjami. |
+| Ryzyko                   | Przyjęte podejście                                                                                                                        |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Rozrastanie się zakresu  | Pierwsza wersja pozostaje przy spotkaniach indywidualnych. Pozostałe możliwości są wizją rozwoju.                                         |
+| Błędy w dostępności      | Sprawdzamy różne długości, kolizje między ofertami, równoczesne operacje, ponowienia i wpływ kopiowania grafiku na istniejące rezerwacje. |
+| Dostęp do cudzych danych | Publiczne są informacje przeznaczone do publikacji. Szczegóły rezerwacji widzą wyłącznie uprawnione osoby.                                |
+| Mylący charakter oferty  | Pomoc psychologiczna i psychiatryczna jest wyraźnie odróżniona od praktyk dobrostanu, również u tej samej osoby.                          |
+| Zbyt proste dane testowe | Seeder obejmuje przypadki problematyczne, a poprawność procesu sprawdzamy również operacjami.                                             |
 
 **Liczba profili zawodowych została rozstrzygnięta podczas modelowania domeny (`docs/decisions.md`, R-010): osoba może mieć kilka profili. Wszystkie oferty tej samej osoby nadal podlegają wspólnej kontroli zajętości.**
