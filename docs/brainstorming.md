@@ -317,7 +317,7 @@ Praktyczny sposób pracy nad każdą decyzją:
 2. Sprawdzić model na dwóch lub trzech konkretnych przyszłych scenariuszach.
 3. Wskazać, jakie założenie utrudniłoby ich dodanie i dlaczego.
 4. Porównać małą zmianę dzisiaj z późniejszą migracją.
-5. Zapisać decyzję, koszt i warunek ponownego rozważenia; ważne granice omówić z Mikołajem.
+5. Zapisać decyzję, koszt i warunek ponownego rozważenia; ważne granice omówić z doświadczonym developerem.
 
 Pożądaną cechą jest możliwość rozsądnej zmiany modelu z zachowaniem danych i reguł. Refaktoryzacja oraz migracja są normalną częścią rozwoju. Nie ma gwarancji obsłużenia nieznanych przyszłych wymagań bez zmian.
 
@@ -381,7 +381,7 @@ Migracje schematu i danych, testy istotnych reguł oraz krótkie zapisy decyzji 
 1. Rozwijać pulę funkcjonalności i zbierać konkretne scenariusze, bez wybierania teraz MVP.
 2. Zachować pytania o organizację wyjazdów i widoczność danych; rozstrzygać je wtedy, gdy będą potrzebne do odpowiedniego przypadku użycia.
 3. Po zakończeniu burzy mózgów osobno wybrać mały zakres pierwszej wersji i doprecyzować jego użytkowników, czynności oraz dane.
-4. W kolejnych etapach samodzielnie szkicować reguły, model i bazę, sprawdzać je na przyszłych scenariuszach oraz omawiać decyzje z AI i Mikołajem.
+4. W kolejnych etapach samodzielnie szkicować reguły, model i bazę, sprawdzać je na przyszłych scenariuszach oraz omawiać decyzje z AI i doświadczonym developerem.
 
 ## Źródła do decyzji technicznych
 

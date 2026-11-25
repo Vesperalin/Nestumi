@@ -29,7 +29,7 @@ Wspólny język pierwszej wersji. Definicje bez odwołań do technologii. Zakres
 
 ### Wolny termin
 
-- **Definicja:** Możliwe rozpoczęcie i zakończenie spotkania dla konkretnej oferty, w którym czas spotkania mieści się w przedziale dostępności profilu tej oferty, forma oferty pasuje do form przedziału, a czas zajętości nie koliduje z zajętością prowadzącego.
+- **Definicja:** Możliwe rozpoczęcie i zakończenie spotkania dla konkretnej oferty, w którym czas spotkania mieści się w przedziale dostępności profilu tej oferty, forma oferty pasuje do form przedziału, a czas zajętości nie koliduje z zajętością prowadzącego. Zaczyna się w przyszłości — termin, który zaczyna się dokładnie teraz, nie jest już wolnym terminem.
 - **Nazwa w kodzie (EN):** AvailableSlot
 - **Przykład:** Przy przedziale 9:00–13:00 i ofercie 60 min wolnym terminem może być 9:00–10:00; przy rezerwacji 10:00–11:00 nie jest nim 9:30–10:30.
 - **To nie jest:** coś, co prowadzący sam tworzy — wynika z grafiku, czasu trwania oferty i istniejących rezerwacji.
@@ -66,7 +66,7 @@ Wspólny język pierwszej wersji. Definicje bez odwołań do technologii. Zakres
 
 ### Osoba
 
-- **Definicja:** Człowiek korzystający z Nestumi. Ma jedno konto, na które się loguje. Ta sama osoba może prowadzić spotkania i uczestniczyć w cudzych.
+- **Definicja:** Człowiek, który ma w Nestumi jedno konto. Ta sama osoba może prowadzić spotkania i uczestniczyć w cudzych. Czynności (np. rezerwację) wykonuje jako zalogowana osoba; gdy nie jest zalogowana, system widzi ją jako anonimowego odwiedzającego.
 - **Nazwa w kodzie (EN):** Person
 - **Przykład:** Anna jest psycholożką i instruktorką jogi, a sama rezerwuje masaż u Marka.
 - **To nie jest:** rola (prowadzący, uczestnik).
@@ -87,10 +87,10 @@ Wspólny język pierwszej wersji. Definicje bez odwołań do technologii. Zakres
 
 ### Anonimowy odwiedzający
 
-- **Definicja:** Osoba korzystająca z Nestumi bez zalogowania. Jest nim także osoba, która ma konto, ale się nie zalogowała.
+- **Definicja:** Ktoś, kto korzysta z Nestumi bez zalogowania, więc system nie wie, kim jest. Może nie mieć konta albo mieć konto i się nie zalogować.
 - **Nazwa w kodzie (EN):** AnonymousVisitor
 - **Przykład:** Ola bez logowania wyszukuje oferty jogi online i ogląda wolne terminy u Anny. Gdy chce zarezerwować, musi się zalogować.
-- **To nie jest:** uczestnik ani prowadzący. Nie zostawia w Nestumi żadnych danych.
+- **To nie jest:** uczestnik ani prowadzący w tej wizycie. Podczas wizyty bez logowania nic w Nestumi nie zapisuje; jeśli ma konto, jego dane i rezerwacje istnieją dalej, tylko system nie łączy ich z tą wizytą.
 
 ### Profil zawodowy
 

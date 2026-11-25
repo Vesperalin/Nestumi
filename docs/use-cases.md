@@ -29,8 +29,11 @@ Poza v1: zapoznać się z powiadomieniami (R-038), dodać lub zmienić link do s
 ### UC-3: zarezerwować wolny termin
 
 Aktor: Osoba
+
 Cel: Zarezerwować wolny termin
+
 Warunki wstępne: Oferta musi być opublikowana
+
 Wynik: Osoba rezerwuje wolny termin; Prowadzącemu ten termin staje się zajęty; Prowadzący i Osoba widzą szczegóły rezerwacji; Inne osoby nie mogą zarezerwować tego terminu; Rezerwacja jest potwierdzona; Po rezerwacji Osoba staje się uczestnikiem; Znikają wszystkie wolne terminy Prowadzącego (także innych jego ofert), które nakładają się na czas spotkania razem z przerwą po nim
 
 1. Osoba wybiera konkretną ofertę u konkretnego Prowadzącego.
@@ -82,6 +85,11 @@ Rozszerzenia:
 5c1. System pokazuje informację o tym, że takiej akcji nie można wykonać
 5c2. Osoba widzi komunikat i przyjmuje do wiadomości
 5c3. Scenariusz wraca do kroku 1
+
+5d. Warunki oferty widoczne w podsumowaniu zmieniły się przed złożeniem rezerwacji (R-047)
+5d1. System pokazuje informację o tym, że warunki oferty się zmieniły
+5d2. Osoba widzi komunikat i przyjmuje do wiadomości
+5d3. Scenariusz wraca do kroku 2
 
 6a. Osoba nie widzi potwierdzenia (np. zerwało się połączenie)
 6a1. Osoba otwiera listę swoich rezerwacji i widzi nową rezerwację.

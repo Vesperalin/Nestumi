@@ -2,7 +2,7 @@
 
 **Wersja 3.2 · 25.10.2026 · środowisko projektu i Claude Code do nauki**
 
-Plan obejmuje fundamenty backendu, projektowanie danych i rozwój własnej aplikacji, a następnie zagadnienia optymalizacji i komunikacji wskazane przez Mikołaja. Alternatywne technologie oraz Kubernetes mają osobne, opcjonalne laboratoria. Szczegółowe lekcje i zadania będą powstawały dopiero przy realizacji danego etapu.
+Plan obejmuje fundamenty backendu, projektowanie danych i rozwój własnej aplikacji, a następnie zagadnienia optymalizacji i komunikacji wskazane przez doświadczonego developera. Alternatywne technologie oraz Kubernetes mają osobne, opcjonalne laboratoria. Szczegółowe lekcje i zadania będą powstawały dopiero przy realizacji danego etapu.
 
 ## Cel i punkt wyjścia
 
@@ -28,13 +28,13 @@ Punkt wyjścia: około 4 lata doświadczenia frontendowego, inżynierka z inform
 | **1–8: fundamenty**                              | Realizuję w podanej kolejności. Temat projektu wybieram w etapie 2, po małym ćwiczeniu backendowym. Etap 5 przygotowuje repozytorium, stos i środowisko pracy z AI; po etapie 6 mam pierwszą działającą funkcję.                                                          |
 | **9–11: rozszerzenia projektu**                  | Geolokalizacja i kalendarz wynikają z moich zainteresowań. Etapy 9 i 10 można zamienić kolejnością. Kolejki ćwiczę po integracji, gdy mam konkretne zadanie do wykonania w tle.                                                                                           |
 | **12: uruchamianie i wydawanie aplikacji**       | Pełny etap po 11; podstawy Git, kontener do bazy i prosty CI pojawiają się wcześniej. Pierwsze wdrożenie można wykonać już po 6, wracając do niego wraz z rozwojem aplikacji.                                                                                             |
-| **13–17: pogłębienie zgodne z uwagami Mikołaja** | Najpierw pomiary (13), potem cache (14). Wyszukiwarka (15) wymaga podstaw danych i kolejek (7, 11); nie wymaga Redis. Komunikacja na żywo (16) i PWA/push (17) mogą być osobnymi ścieżkami po integracjach, kolejkach i wdrożeniu (10–12). Web Push nie wymaga WebSocket. |
+| **13–17: pogłębienie zagdanień** | Najpierw pomiary (13), potem cache (14). Wyszukiwarka (15) wymaga podstaw danych i kolejek (7, 11); nie wymaga Redis. Komunikacja na żywo (16) i PWA/push (17) mogą być osobnymi ścieżkami po integracjach, kolejkach i wdrożeniu (10–12). Web Push nie wymaga WebSocket. |
 | **18: laboratoria do wyboru**                    | GraphQL, modele danych, Kafka, gRPC i serverless. Każde ma własne warunki wejścia; numer 18 nie oznacza konieczności ukończenia etapów 1–17.                                                                                                                              |
 | **19 i dalsze kierunki: horyzont rozwoju**       | Kubernetes po kontenerach, wdrożeniach i pomiarach (12–13), niezależnie od laboratoriów 18. Pozostałe tematy wybieram według potrzeb.                                                                                                                                     |
 
 Etapy 1–12 budują pierwszą wersję aplikacji i umiejętność jej utrzymania w ćwiczonym zakresie. Etapy 13–17 pogłębiają projektowanie; nie trzeba ukończyć całego katalogu, aby zacząć podejmować zadania fullstackowe. Każde nowe narzędzie powinno odpowiadać na konkretny problem albo pozostać osobnym eksperymentem.
 
-Kryterium ukończenia oznacza, że potrafię wyjaśnić mechanizm, wykonać ćwiczenie i zdiagnozować jego typowe błędy. Nie oznacza eksperckiego opanowania całej technologii. Decyzje dotyczące modelu danych, transakcji i granic odpowiedzialności warto dodatkowo poddać przeglądowi Mikołaja.
+Kryterium ukończenia oznacza, że potrafię wyjaśnić mechanizm, wykonać ćwiczenie i zdiagnozować jego typowe błędy. Nie oznacza eksperckiego opanowania całej technologii. Decyzje dotyczące modelu danych, transakcji i granic odpowiedzialności warto dodatkowo poddać przeglądowi doświadczonego developera.
 
 ## Etapy
 
@@ -105,7 +105,7 @@ Kryterium ukończenia oznacza, że potrafię wyjaśnić mechanizm, wykonać ćwi
 
 ### 8. DDD w kodzie, Vertical Slice Architecture i wzorce projektowe
 
-- **Zakres:** encje, value objects, agregaty i granice spójności; logika domenowa i przypadki użycia; oddzielenie domeny od HTTP i infrastruktury. Adapter, factory, strategy, decorator i facade; rozróżnienie wzorca Decorator i dekoratorów TypeScript.
+- **Zakres:** encje, value objects, agregaty i granice spójności; logika domenowa i przypadki użycia; oddzielenie domeny od HTTP i infrastruktury. Adapter, factory, strategy, decorator i facade; rozróżnienie wzorca Decorator i dekoratorów TypeScript. Wzorzec outbox
 - **Vertical Slice Architecture:** organizacja kodu według przypadków użycia, porównanie z podziałem warstwowym oraz łączenie VSA z DDD wewnątrz modularnego monolitu. Granice zależności między funkcjami, współdzielenie reguł domenowych i infrastruktury oraz ryzyko powielania logiki. VSA nie wymaga osobnego projektu ani zastosowania w całej aplikacji.
 - **Praktyka:** na podstawie doświadczeń z działającą funkcją poprawiam podział na moduły. Wydzielam istotną regułę do testowania bez bazy i HTTP. Stosuję wzorce tam, gdzie rozwiązują konkretny problem; do integracji wracam z adapterem w etapie 10.
 - **Ćwiczenie VSA:** na małym fragmencie działającego projektu porównuję podział warstwowy z podziałem według przypadków użycia. Wprowadzam tę samą zmianę wymagania w obu wariantach, sprawdzam jej wpływ na kod i testy oraz uzasadniam wybór. Wspólne reguły biznesowe zachowują jedno źródło definicji.
@@ -202,7 +202,7 @@ Każdy temat kończy się małym eksperymentem i decyzją, czy ma zastosowanie w
 - **Kryterium ukończenia:** umiem odróżnić awarię aplikacji, brak zasobów, problem konfiguracji i routingu; wyjaśniam, co zapewniają kontrolery, a co nadal musi obsłużyć aplikacja. Potrafię porównać koszt obsługi z Compose lub zarządzaną platformą.
 - **Późniejsze pogłębienie:** HPA na podstawie metryk, Jobs/CronJobs, Helm/Kustomize, service accounts/RBAC, NetworkPolicy i zarządzany klaster. Utrzymanie produkcyjnych baz w klastrze jest osobnym zagadnieniem.
 
-## Dalsze kierunki — propozycje ponad uwagi Mikołaja
+## Dalsze kierunki — propozycje
 
 Nie są automatycznie obowiązkowymi kolejnymi etapami. Wybieram jeden problem i eksperyment, zamiast dodawać całą listę do projektu.
 
@@ -233,18 +233,10 @@ Cykl pracy: **pojęcie → własna propozycja → krytyka → eksperyment → we
 - Pierwszy szkic modelu, schematu, reguł i oczekiwanych wyników testów przygotowuję samodzielnie.
 - AI wyjaśnia pojęcia, zadaje pytania, szuka kontrprzykładów i ocenia propozycje. Korzystam z mechanizmów skonfigurowanych w etapie 5; może pomagać w implementacji i danych testowych, przy zachowaniu mojego udziału w decyzjach i weryfikacji.
 - Pierwszy mały przykład nowego mechanizmu implementuję na tyle samodzielnie, aby umieć prześledzić jego działanie.
-- Odpowiedzi AI weryfikuję dokumentacją, testami i obserwacją działania. Ważne decyzje poddaję również ocenie Mikołaja.
+- Odpowiedzi AI weryfikuję dokumentacją, testami i obserwacją działania. Ważne decyzje poddaję również ocenie doświadczonego developera.
 - Zapisuję krótkie ADR-y: decyzja, powód, alternatywa, koszt i warunek ponownego rozważenia.
 - Regularnie wykonuję małe ćwiczenia modelowania innych domen, żeby nie ograniczać nauki do jednego schematu.
 - Po sesji zapisuję stan pracy, niewyjaśnioną kwestię i następny mały krok. Pozwala to wracać po przerwach bez harmonogramu.
-
-## Pytania do Mikołaja
-
-1. Czy fundamenty, zwłaszcza modelowanie domeny, SQL, transakcje i projektowanie ograniczeń, mają odpowiednią głębokość i kolejność?
-2. Czy etapy 11 i 13–17 odpowiadają temu, co miałeś na myśli przy kolejkach, optymalizacji, warmuperach, wyszukiwarce i komunikacji fullstackowej?
-3. Które kryteria ukończenia są zbyt szerokie lub zbyt słabe? Jaki konkretny eksperyment lepiej sprawdzi zrozumienie?
-4. Które laboratoria, w tym GraphQL i Kubernetes, warto wybrać w kontekście mojej pracy, a które odłożyć?
-5. Przy których decyzjach możemy zrobić wspólny przegląd: model danych i transakcje, topologia kolejek, granice DB/wyszukiwarki czy strategia cache?
 
 ## Materiały odniesienia
 
